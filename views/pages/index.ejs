@@ -1,0 +1,8 @@
+<article class="speakerslist jumbotron d-none d-sm-block">
+  <div class="container">
+    <div class="row">
+      <% topSpeakers.forEach(function(user){ %> <%-
+      include('./partial/article.ejs', {user: user}); %> <% }); %>
+    </div>
+  </div>
+</article>

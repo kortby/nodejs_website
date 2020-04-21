@@ -1,0 +1,25 @@
+<div class="">
+  <h4 class="speakerslist-title">
+    <%= speaker.title %>
+  </h4>
+  <div class="speakerslist-name">
+    with
+    <a href="/speakers/<%= speaker.shortname %>">
+      <%= speaker.name %>
+    </a>
+  </div>
+  <div class="speakerslist-info">
+    <div class="col-sm-3">
+      <a href="/speakers/<%= speaker.shortname %>">
+        <img
+          class="speakerslist-img rounded-circle img-fluid"
+          src="/images/speakers/<%= speaker.shortname %>_tn.jpg"
+          alt="Photo of <%= speaker.name %> Post"
+        />
+      </a>
+    </div>
+  </div>
+  <p>
+    <%- speaker.description %>
+  </p>
+</div>

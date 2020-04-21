@@ -1,0 +1,16 @@
+<div class="col-md text-center">
+  <h4 class="speakerslist-title"><%= user.title %></h4>
+  <div class="speakerslist-name">
+    with
+    <a href="/speakers/<%= user.shortname %>"><%= user.name %></a>
+  </div>
+  <div class="speakerslist-info mt-2">
+    <a href="/speakers/<%= user.shortname %>">
+      <img
+        class="speakerslist-img rounded-circle"
+        src="images/speakers/<%= user.shortname %>_tn.jpg"
+        alt="Photo of <%= user.name %>"
+      />
+    </a>
+  </div>
+</div>
